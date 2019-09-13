@@ -12,10 +12,8 @@ namespace SWD_LAB_04_StockingController
     {
         static void Main(string[] args)
         {
-            var timer = new Timer();
-            var timePump = new TimedPump1();
             var compressionStocking = new StockingController(new TimedPump1());
-
+            
             ConsoleKeyInfo consoleKeyInfo;
 
             Console.WriteLine("Compression Stocking Control User Interface");
@@ -29,13 +27,12 @@ namespace SWD_LAB_04_StockingController
                 if (consoleKeyInfo.Key == ConsoleKey.A)
                 {
                     compressionStocking.StartBtnPushed();
-                    timer.Register(5, timePump);
+                    
                 }
 
                 if (consoleKeyInfo.Key == ConsoleKey.Z)
                 {
                     compressionStocking.StopBtnPushed();
-                    timer.Register(2,timePump);
                 }
 
             } while (consoleKeyInfo.Key != ConsoleKey.Escape);

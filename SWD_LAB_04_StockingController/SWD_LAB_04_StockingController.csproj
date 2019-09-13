@@ -43,13 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GreenLED.cs" />
+    <Compile Include="Classes\RedLED.cs" />
     <Compile Include="Classes\StockingController.cs" />
     <Compile Include="Classes\TimedPump1.cs" />
     <Compile Include="Classes\Timer.cs" />
+    <Compile Include="Classes\Vibrator.cs" />
     <Compile Include="Interfaces\IBtnHandler.cs" />
     <Compile Include="Interfaces\ICompressionCtrl.cs" />
+    <Compile Include="Interfaces\ILED.cs" />
     <Compile Include="Interfaces\ITimerClient.cs" />
     <Compile Include="CompressionStockingApp.cs" />
+    <Compile Include="Interfaces\IVibrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

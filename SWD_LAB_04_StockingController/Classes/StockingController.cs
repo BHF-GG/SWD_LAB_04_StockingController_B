@@ -10,6 +10,7 @@ namespace SWD_LAB_04_StockingController.Classes
     {
         private readonly ICompressionCtrl _compressionCtrl;
 
+
         public StockingController(ICompressionCtrl compressionCtrl)
         {
             _compressionCtrl = compressionCtrl;
@@ -18,11 +19,20 @@ namespace SWD_LAB_04_StockingController.Classes
         public void StartBtnPushed()
         {
             _compressionCtrl.Compress();
+
+            //_ledG.Toggle();
+            //_vibrator.ToggleVibrator();
+            //_vibrator.ToggleVibrator();
+            //_ledG.Toggle();
         }
 
         public void StopBtnPushed()
         {
+            //_ledR.Toggle();
+            //_vibrator.ToggleVibrator();
             _compressionCtrl.Decompress();
+            //_vibrator.ToggleVibrator();
+            //_ledR.Toggle();
         }
 
 
